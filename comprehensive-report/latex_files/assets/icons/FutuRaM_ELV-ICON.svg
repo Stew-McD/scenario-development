@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Icon"
+   viewBox="0 0 500 500"
+   version="1.1"
+   sodipodi:docname="FutuRaM_ELV-ICON.svg"
+   inkscape:export-filename="FutuRaM_ELV-ICON.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3350176"
+     inkscape:cx="337.82326"
+     inkscape:cy="164.79183"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Icon" />
+  <g
+     id="g8">
+    <circle
+       cx="157.23"
+       cy="180.19"
+       r="10.99"
+       id="circle2" />
+    <circle
+       cx="233.48"
+       cy="180.19"
+       r="10.99"
+       id="circle4" />
+    <path
+       d="m 146.51,138.95 v 0 c 4.21,-9.77 13.83,-16.1 24.47,-16.1 h 36 c 9.02,0 17.42,4.56 22.34,12.12 l 5.13,7.88 22.74,5.15 c 9.11,2.06 15.58,10.16 15.58,19.5 v 5.54 c 0,3.96 -3.21,7.17 -7.17,7.17 h -15.31 c 0,-9.29 -7.53,-16.81 -16.81,-16.81 -9.28,0 -16.81,7.53 -16.81,16.81 h -42.62 c 0,-9.29 -7.53,-16.81 -16.81,-16.81 -9.29,0 -16.81,7.53 -16.81,16.81 H 128.6 c -3.22,0 -5.83,-2.61 -5.83,-5.83 v -13.33 c 0,-8.76 5.7,-16.5 14.07,-19.09 l 9.67,-3 z"
+       id="path6" />
+  </g>
+  <path
+     d="M 285.21718,77.24704 V 257.21718 H 105.24704 V 77.24704 H 285.21718 M 299.46422,63 H 91 v 208.46422 h 208.46422 z"
+     id="path10"
+     style="stroke-width:0.595612" />
+</svg>

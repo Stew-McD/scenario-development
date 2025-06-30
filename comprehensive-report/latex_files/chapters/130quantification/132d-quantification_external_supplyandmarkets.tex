@@ -1,0 +1,181 @@
+\subsection{Supply constraints and market dynamics}
+
+\boxreview{The precise methodology to be applied to determine the effects of hypothetical supply constraints and market dynamics on the model's outcomes has not yet been determined. This will be developed once the precise structure of the model has been finalised.}
+
+\subsubsection{Introduction}
+
+Supply constraints refer to limitations in the availability of resources that can impact industries and markets. These constraints can arise from various sources, such as natural resource depletion, geopolitical issues, economic factors, or environmental regulations. In the context of waste generation, collection, and recovery, supply constraints can significantly affect the dynamics of the entire system.
+
+Market dynamics refer to the interactions between supply and demand that determine the prices of goods and services. These dynamics are influenced by various factors, such as the availability of resources, technological change, the state of the economy, and governmental policies.
+
+Incorporating these economic factors into waste management models is essential to understand and predict the behavior of waste systems under different economic conditions. Accurate modeling can aid in making informed decisions regarding waste management policies and practices.
+
+The following section details the importance of supply constraints and market dynamics and introduces the proposed strategy for incorporating these 'outside' elements in the modelling work in FutuRaM.
+
+
+\subsubsection{Impacts of supply constraints and market dynamics}
+
+\subsubsubsection{Impact on Waste Generation}
+Constraints on the supply of materials can lead to alterations in waste composition. For instance, scarcity in a particular raw material can decrease the production and subsequent waste of products made from that material.
+
+\subsubsubsection{Impact on Collection and Recovery Systems}
+The availability of resources dictates the priorities of waste collection and recovery systems. Material scarcity can shift the focus towards recycling, while abundance might lead to alternative materials being preferred.
+
+\subsubsubsection{Lag Times to Recovery}
+The scarcity of materials can extend the time products remain in use before entering the waste stream, affecting the timing and efficiency of waste recovery systems.
+
+\subsubsection{Economic Factors Influencing Waste Management}
+Economic aspects like prices, subsidies, and taxation play a crucial role in waste management, especially in the context of supply constraints.
+
+\subsubsubsection{Influence of Raw Material Prices}
+High prices for primary raw materials can incentivize the recycling of secondary materials. This economic motivation can lead to advancements in recycling technology and increased recycling efforts.
+
+\subsubsubsection{Secondary Raw Material Pricing}
+The pricing of secondary raw materials, often influenced by the availability and price of primary materials, affects their attractiveness for recycling. Competitive pricing of secondary materials can promote their use over primary materials.
+
+\subsubsubsection{Governmental Policies: Subsidies and Taxation}
+Policies involving subsidies for recycling activities or taxation on primary raw materials can shape the waste management landscape. These fiscal tools can encourage or discourage recycling based on their design and application.
+
+\subsubsubsection{Market Dynamics and Policy Interventions}
+Market dynamics, influenced by policy interventions, can also impact waste management. For example, a policy promoting the use of recycled materials can alter market preferences and boost recycling efforts.
+
+\subsubsection{Incorporation of supply constraints and market dynamics into the model}
+
+\subsubsubsection{Sensitivity Analysis}
+
+Sensitivity analysis is an instrumental approach in modelling to ascertain the impact of supply constraints and market dynamics on the waste management system. This technique involves systematically varying parameters within the model and observing the resultant effects on the output. It is particularly beneficial in identifying which variables have the most significant influence on the system's behaviour. 
+
+
+Global Sensitivity Analysis, an extension of this concept, examines the entire parameter space, offering a comprehensive view of potential model responses to changes in input factors. This method is crucial in revealing the relative importance of different variables and can highlight areas where the system is most susceptible to economic fluctuations. 
+
+
+By utilising sensitivity analysis, decision-makers can better understand the robustness of their systems and formulate strategies that are resilient to economic uncertainties.
+
+\boxgreen{EXAMPLE}{
+\textbf{Impact of Raw Material Prices and Government Subsidies on Recovery System:}
+\begin{description}
+    \item[Scenario:] The model tests scenarios with significant fluctuations in raw material prices. In certain scenarios, a government subsidy is introduced to set a minimum price for recycled materials, ensuring their economic viability.
+    \item[Analysis:] Sensitivity analysis evaluates the effect of raw material price changes on the profitability and viability of the recovery system. It also tests the impact of government subsidies in stabilising the system against these fluctuations.
+    \item[Outcome:] This analysis can reveal the dependency of recovery operations on raw material market prices and the effectiveness of government subsidies in mitigating associated risks.
+\end{description}
+}
+
+\boxgreen{EXAMPLE}{
+\textbf{Reduction of a Valuable Material in the Waste Stream:}
+\begin{description}
+    \item[Scenario:] The model explores a situation where a previously abundant and valuable material becomes scarce in the waste stream.
+    \item[Analysis:] This sensitivity analysis investigates the impact of reduced availability of this valuable material on the overall profitability of the waste management system.
+    \item[Outcome:] It identifies critical thresholds where a reduction in material significantly affects the system's financial viability, guiding strategies for diversifying material recovery or exploring alternative revenue sources.
+\end{description}
+}
+
+\subsubsubsection{Optimisation}
+
+Optimisation techniques are employed to identify the most efficient operational settings for the waste management system under diverse economic conditions. By modelling various local scenarios that encapsulate different economic realities –-- such as varying levels of resource scarcity, price dynamics of primary versus secondary materials, and the impact of subsidies or taxes –-- the model aims to find the optimal balance. This balance could be in terms of cost-effectiveness, resource utilization, environmental impact, or a combination of these factors. Optimization provides a framework to make data-driven decisions that can enhance the efficiency and sustainability of the waste management system.
+
+Multi-Objective Optimisation is a key aspect of this process, where multiple conflicting objectives are considered simultaneously. This approach is essential in waste management systems, where there is often a need to balance economic goals with environmental sustainability. 
+
+By employing optimisation techniques, particularly Multi-Objective Optimisation, the model can provide insights into the trade-offs and synergies between different objectives, thereby facilitating more informed and balanced decision-making in waste management policies and operations.
+
+\boxgreen{EXAMPLE}{
+\textbf{Responding to Sudden Demand Increase for a Previously Less Valuable Material (Element X):}
+\begin{description}
+    \item[Scenario:] The model simulates a sudden increase in demand and price for a specific material (Element X) that was previously less valuable.
+    \item[Analysis:] The system's response is optimized to maximise profitability under this new market condition, involving adjustments in collection and processing priorities towards Element X.
+    \item[Outcome:] The optimisation indicates the most effective strategies for reallocating resources and operations to capitalise on the increased demand for Element X, enhancing profitability.
+\end{description}
+}
+
+\boxgreen{EXAMPLE}{
+\textbf{Optimizing for Environmental and Economic Goals amid Rising Carbon Emission Costs:}
+\begin{description}
+    \item[Scenario:] The model considers a significant increase in the cost of carbon emissions, impacting the expense of recovery operations.
+    \item[Analysis:] The optimisation aims to balance environmental impact (carbon footprint) with economic viability, exploring operational adjustments like adopting more carbon-efficient recovery processes or prioritising materials with higher primary carbon footprints (offsets and substitution).
+    \item[Outcome:] This approach yields insights into effective strategies for maintaining profitability while minimising environmental impact, aiding the system in achieving a dual bottom line of environmental sustainability and financial health.
+\end{description}
+}
+
+\subsectionEndline
+
+\clearpage
+
+\subsubsection{Relevance of supply constraints and market dynamics for FutuRaM's waste streams}
+
+\wasteSubsubsubsecBATT
+\begin{itemize}
+    \item Fluctuating availability and prices of lithium and cobalt can significantly impact the recycling value and processes for batteries.
+    \item Governmental policies on battery disposal and recycling can alter the landscape of battery waste management, influencing recycling rates and methodologies.
+\end{itemize}
+
+\wasteSubsubsubsecCDW
+\begin{itemize}
+    \item Variations in the construction market and raw material prices can influence the generation and composition of construction and demolition waste.
+    \item Economic incentives and regulatory frameworks for sustainable construction practices can drive the recycling and reuse rates of CDW.
+\end{itemize}
+
+\wasteSubsubsubsecELV
+\begin{itemize}
+    \item Changes in the metal market, particularly for steel and aluminium, can impact the profitability of recycling ELVs.
+    \item Environmental regulations on vehicle disposal and recycling can shape the recovery strategies for ELV waste.
+\end{itemize}
+
+\wasteSubsubsubsecMIN
+\begin{itemize}
+    \item Market demand for specific minerals can influence the focus and intensity of recovery efforts from mining residues.
+    \item Policy changes regarding mine waste management can lead to shifts in recovery and disposal practices for mining residues.
+\end{itemize}
+
+\wasteSubsubsubsecSLASH
+\begin{itemize}
+    \item The variability in the composition of slags and ashes due to different industrial processes and raw materials can significantly influence recovery and recycling strategies.
+    \item Market conditions for secondary raw materials derived from slags and ashes, such as metals, can greatly affect the economic viability of their recovery and recycling processes.
+\end{itemize}
+
+\wasteSubsubsubsecWEEE
+\begin{itemize}
+    \item Fluctuations in precious metal prices can affect the economics of recycling electronic waste.
+    \item Evolving technology and product lifecycles can influence the generation and composition of WEEE, affecting recycling strategies.
+\end{itemize}
+
+\subsectionEndline
+
+
+\clearpage
+\subsubsection{Incorporation of supply constraints and market dynamics into individual waste stream models}
+
+\boxws{This section will be filled out with the details of exactly how this parameter is incorporated into your stock and flow models}
+
+\wasteSubsubsubsecBATT
+\begin{itemize}
+    \item X
+\end{itemize}
+
+\wasteSubsubsubsecCDW
+\begin{itemize}
+    \item X
+\end{itemize}
+
+\wasteSubsubsubsecELV
+\begin{itemize}
+    \item X
+\end{itemize}
+
+\wasteSubsubsubsecMIN
+\begin{itemize}
+    \item X
+\end{itemize}
+
+\wasteSubsubsubsecSLASH
+\begin{itemize}
+    \item X
+\end{itemize}
+
+\wasteSubsubsubsecWEEE
+\begin{itemize}
+    \item X
+\end{itemize}
+
+
+\subsectionEndline
+
+\clearpage

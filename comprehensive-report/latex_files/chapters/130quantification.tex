@@ -1,0 +1,145 @@
+\fancyhead[L]{\hyperref[chapter:quantification]{\textsc{Quantification}}}
+\chapter{Quantification}\label{chapter:quantification}
+\localtableofcontents
+\addcontentsline{lot}{chapter}{Quantification}
+\addcontentsline{lof}{chapter}{Quantification}
+\addcontentsline{tof}{chapter}{Quantification}
+\fancyhead[L]{\hyperref[chapter:quantification]{\textsc{Quantification}}}
+
+\clearpage
+
+\breaksection{Introduction}
+
+In the FutuRaM project, scenario elements are categorised based on their influence and relevance to the secondary raw material (SRM) system. This categorisation aids in refining the focus of the scenarios and ensuring they are relevant, manageable, and useful.
+
+Following the process detailed in \autoref{chapter:methodology}, the resultant scenario elements were classified in preparation for quantification. These elements are listed in \autoref{tab:elements-4}.
+
+\begin{description}[style=nextline]
+    \item[Internal Elements:](\autoref{sec:quantification_internal_rec} and \autoref{sec:quantification_internal_cei})
+    These are directly within the scope of FutuRaM and significantly impact the waste management system. They are integral to the models and scenarios. For example, changes in waste composition and recovery methods fall under this category. These elements are thoroughly researched and modeled as they are central to understanding and projecting the SRM system's future.
+    \item[External Elements:](\autoref{sec:quantification_external})
+    Elements deemed external are still relevant to the scenarios but are not as directly related as the internal elements. External elements are set as the background of the three scenarios, allowing a better focus on the main variables of importance to FutuRaM. These elements do not vary across the three different scenarios but they do change over time. These elements include demographics, economic growth, and the renewable energy transition.
+    \item[Outside Elements:](\autoref{sec:quantification_external})
+    These are factors outside the scope and influence of the waste management system and are not included in the scenario storylines or directly in the models. They may be considered in sensitivity analysis but are not primary drivers in the scenario development. For instance, resource supply constraints are external factors that could impact the waste management system but are too unpredictable and complex to model directly within the scenarios. Their inclusion could introduce significant uncertainty and make the models less interpretable and actionable. These elements are, however, considered important, and their possible impacts on the SRM system will be explored in exercises of sensitivity analysis and optimisation. 
+  \end{description}
+
+The rationale behind this categorisation is to maintain focus and clarity in the scenario modeling. Including too many complex and indirectly related elements can convolute the scenarios, making them overly complex and less useful for practical decision-making and policy analysis. By concentrating on integral elements --- or those that can be controlled or influenced by associated policy decisions --- FutuRaM ensures that its scenarios are both manageable and directly relevant to its objectives of exploring different futures of the SRM system. This approach strikes a balance between realism and practicality, ensuring the scenarios are both meaningful and actionable.
+
+
+\subsection{Quantification and Implementation of scenario elements in the models}
+
+\subsubsection{External drivers}
+
+For each external driver in the scenarios, the values are defined globally and each waste stream will interpret this into their models using a "top-down" approach. This will require the development of correlations between the scenario driver and the parameter in the waste stream model. The resolution of this will be different for each scenario driver and each waste stream. 
+
+\subsubsection{Internal elements}
+
+For the internal elements in the scenarios, a global value can often not be defined. For these elements, the waste stream models will define the values for each scenario using a "bottom-up" approach. This will require the estimation of future trends for each parameter and scenario for the product/waste groupings in each waste stream. Then, a global value can be calculated by taking a weighted average for each of the groups. 
+
+The outcome of these estimations will be a range of values for each time series, for each parameter in each waste stream for each scenario.
+
+\autoref{fig:quantification_diagram} depicts a schema for the interconnection between the models for the quantification and implementation of the scenario elements. 
+
+\begin{landscape}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{130quantification/scenario_schema.drawio.png}
+    \caption{Quantification and Implementation of scenario elements in the models}
+    \label{fig:quantification_diagram}
+    \end{figure}
+\end{landscape}
+
+\subsubsection{Methodology for quantification}
+
+The methodology for quantification of the scenario elements is as follows:
+
+\begin{enumerate}
+  \item Define the parameters for each waste stream model
+  \item Define the parameters for each scenario element in relation to the parameters in the waste stream model
+  \item Define the correlations between the scenario elements and the parameters
+  \item Estimate the future trends for each parameter in each scenario for every set of product/waste groupings
+  \item Using the constraints of the waste stream parameter for each product group, define the coefficients of the functions between the scenario elements and the parameters
+\end{enumerate}
+
+
+\autoref{fig:quantification_diagram_correlations} depicts a schema for the development of correlations between elements and parameters in the waste stream models and the scenarios. The values of the functions between the pairs need to be defined.
+
+\begin{landscape}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{130quantification/scenario_schema_correlations.png}
+    \caption{Development of correlations between elements and parameters in the waste stream models and the scenarios}
+    \label{fig:quantification_diagram_correlations}
+    \end{figure}
+\end{landscape}
+
+\subsubsection{Methodology for estimating future trends}
+
+After the correlations between the scenario elements and the parameters in the waste stream models have been defined, the future trends for each parameter in each scenario for every set of product/waste groupings can be estimated.
+
+For some parameters, the future trends can be estimated using a simple linear regression. For other parameters, the future trends will be estimated using a more complex model. The exact methodology for estimating the future trends for each parameter in each scenario for every set of product/waste groupings will be determined on a case-by-case basis.
+
+Consideration of historical and current data, knowledge of the waste stream, and analysis of the scenarios will be used to determine the most appropriate modelling method.
+
+An exact value is not to be sought, but rather a distribution, with constraints regarding the minimum and maximum values and the rate of change over time.
+
+Using this, simple models can be approximated using the method of curve fitting. The choice of model (linear, exponential, etc.) will be determined by the data and the scenario. For example, a new technology or a rapid change in policy may result in an initial exponential change in the parameter, the beginning of the typical sigmoidal curve (or even a step change). This may then level off to a linear trend, then a logarithmic relationship as the technology or policy matures.
+
+\autoref{fig:dinosaurs2013scurve} illustrates a sigmoidal curve with its characteristic three phases of growth. Typically, a sigmoidal curve (depicted as a solid black line) commences with an exponential phase, transitions into a linear phase (encompassing the inflection point where the growth rate peaks), and concludes with an asymptotic phase, where the curve nears a constant asymptote 'a' as time tends towards infinity. In certain instances, the initial exponential phase might be remarkably brief, to the point of seeming non-existent. However, the linear and asymptotic stages are consistent features across all sigmoidal curves. Attenuating curves share similarities but are distinct in that they do not have the initial exponential phase, resembling a sigmoidal curve that initiates at its inflection point around t\~0. The logistic function is a special case of the sigmoidal function, with the inflection point at x=0.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\linewidth]{130quantification/dinosaurs2013scurve.jpg}
+  \caption{An example of a sigmoidal function (s-curve)}
+  \label{fig:dinosaurs2013scurve}
+\end{figure}
+
+The s-curve is a generalisation of the logistic function, which is defined as:
+
+\begin{equation}
+  f(x) = \frac{L}{1+e^{-k(x-x_0)}}
+\end{equation}
+
+where:
+
+\begin{itemize}
+  \item $x_0$ = the x-value of the sigmoid's midpoint,
+  \item $L$ = the curve's maximum value, and
+  \item $k$ = the logistic growth rate or steepness of the curve.
+  \item $e$ = the natural logarithm base (also known as Euler's number),
+\end{itemize}
+
+Important to note here is that what, during some period, may appear to be a constant linear (or other) change, may in fact be a segment of a sigmoidal curve. This is important to consider when estimating future trends, for some changes, the period from 2020-2050 may be short enough that the nature of the transition does not change, although it would when viewed over a longer time range.
+
+\begin{samepage}
+The comic in \autoref{fig:xkcd-sustainable} plots the frequency of the usage of the term 'sustainable' over time, forecasting that by 2109, all sentences will consist only of the word 'sustainable', repeated again and again. `Fittingly', the author also notes that '100 years is a lot longer than many of our resources will last'. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\linewidth]{130quantification/xkcd-sustainable.png}
+  \caption[The word 'sustainable' is unsustainable]{The word 'sustainable' is unsustainable~\cite{xkcd-sustainable}}
+  \label{fig:xkcd-sustainable}
+\end{figure}
+\end{samepage}
+
+It is of course a generalisation to assume that all growth rates follow this trend, but it is mostly close enough to reality to be useful. This will be the standard approach for estimating future trends in the FutuRaM project unless there is reason to believe that the nature of the transition is different (which it often is!). 
+
+Further details are provided in the relevant sections of this chapter and will be updated as the project progresses.
+
+\clearpage
+
+\input{130quantification/131-quantification_summary.tex}
+\clearpage
+\input{130quantification/132-quantification_external.tex}
+\clearpage
+\input{130quantification/133-quantification_rec.tex}
+\clearpage
+\input{130quantification/134-quantification_cei.tex}
+\clearpage
+
+\breaksection{Conclusion}
+
+\boxreview{This conclusion will be compiled once the individual waste stream sections for each parameter are complete.}
+
+% end of chapter
+\chapterEndlines

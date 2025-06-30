@@ -1,0 +1,28 @@
+DOMAIN;FACTOR / DRIVER;DEFINITION;BAU;REC;CIR
+Economic;CO2 market price;Price of carbon dioxide (CO2) emissions in carbon markets;I;I;I
+Economic;Economic growth;Rate of economic growth;I;I;I
+Economic;Energy prices;Prices of energy resources;I;I;I
+Economic;Market saturation;Level of saturation reached in the market for certain products or services;I;I;II
+Economic;Raw material vs SRM prices;Price comparison between raw materials and Secondary Raw Materials (SRMs);I;I;I
+Economic;Re-industrialisation of EU;Process of revitalizing industrial activities in the European Union;I;I;I
+Environmental;Climate change impacts (flooding, etc.);Impacts of climate change such as flooding and other related events;I;I;I
+Environmental;Climate change mitigation efforts;Efforts made to mitigate the effects of climate change;I;I;I
+Environmental;Increased drive for env. protection;Growing motivation and drive to protect the environment;I;III;III
+Environmental;Resource shortage;Shortage of natural resources;I;I;I
+Legal/Political;Ecodesign/re-X mandates;Establishment of ecodesign requirements for specific product groups to improve circularity, energy performance, and other environmental sustainability aspects;I;II;III
+Legal/Political;Governance: corruption vs compliance;Contrasting levels of corruption and compliance within governance systems;I;I;I
+Legal/Political;International trade and co-operation (vs. autarky);Level of international trade and cooperation versus self-sufficiency;I;I;I
+Legal/Political;Product information transparency;Provision of transparent product information to consumers, manufacturers, importers, repairers, recyclers, or national authorities;I;III;III
+Legal/Political;Progress toward renewable energy targets;Progress made in achieving renewable energy targets;I;I;I
+Legal/Political;Stricter environmental regulations;Implementation of more stringent rules and regulations for environmental protection;I;III;III
+Legal/Political;Subsidies/taxation to promote circularity;Provision of subsidies or implementation of taxation policies to incentivize circularity;I;I;I
+Legal/Political;Supply chain due diligence laws;Implementation and enforcement of laws requiring companies to address negative human rights and environmental impacts in their value chains;I;II;III
+Social;Hoarding;The act of stockpiling and keeping excessive amounts of products;III;II;II
+Social;NIMBY to projects;Opposition of local communities to the location of new projects, such as mining, in their vicinity;I;I;I
+Social;Participation in re-X activities;"Involvement in activities related to the ""re-"" concepts, including refusing, reducing, repairing, and reusing products";I;II;III
+Social;Population;Size and growth of the population;I;I;I
+Social;Urbanisation;Rate of urban population growth;I;I;I
+Technical;Digitisation;Adoption and integration of digital technologies;I;I;I
+Technical;Integration of SRM system across EU;Integration of a Secondary Raw Materials (SRM) system across the European Union;I;III;III
+Technical;Product technology;Changes in product function or composition that lead to changes in waste stream composition and quantity;I;III;III
+Technical;Recovery technology;Technologies and processes for recovering materials from waste;I;III;III

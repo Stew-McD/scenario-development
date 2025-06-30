@@ -1,0 +1,171 @@
+\breaksection{Internal elements --- The Circular Economy}\label{sec:quantification_internal_cei}
+\subsection{Introduction}
+
+\textbf{Main sources:}~\cite{pardo2018ce,morseletto2020cetargets,eu2018cemonitoring,marino2020ce, oecd2015greengrowth, calistofriant2021ce, stahel2019ce,pbl2021ce, reike2018rex,kirchherr2017circ,nl2023ceplan}
+
+\boxgreen{\textbf{Circular Strategies}}{
+        \textbf{Scenario elements}
+        \begin{itemize}
+          \item \textbf{R0-2:}\\  Refuse, Reduce, Reuse (including 'sharing economy')
+          \item \textbf{R3:} \\ Repair
+          \item \textbf{R4-5:}\\  Refurbish and Remanufacture
+        \end{itemize}
+        \textbf{Waste model parameters include:}
+        \begin{itemize}
+          \item \textbf{Put-on-market:} \\ function of consumer behaviour (internal) 
+          \item \textbf{Lifetimes:} \\ function of repair rate, durability, design-for-repair
+          \item \textbf{Waste composition:} \\ function of product composition, durability (weight), design-for-repair, etc.
+          \item \textbf{Collection rate:} \\ function of consumer engagement in re-X strategies, collection infrastructure, legislation, export rate
+        \end{itemize}
+        \textbf{Recovery model parameters include:}
+        \begin{itemize}
+          \item \textbf{Transfer coefficients:} \\ function of design-for-(re-X) strategies, recovery technology (internal)
+          \item \textbf{Recovery system size:} \\ function of collection rate
+        \end{itemize}
+          }
+        
+\subsubsection{The Circular Economy and its re-X strategies}
+
+The re-X strategies underpin the circular economy, embodying a range of actions and approaches. These strategies are conceptualised in various ways, depending on the focus and perspective of different authors. The description that follows is based on the framework provided by ~\cite{reike2018rex}, with a detailed mapping of these strategies illustrated in Figure~\ref{fig:rex-map}.
+
+\begin{description}
+    \item[R0: Refuse] — This concept is applied both in consumer and producer contexts. For consumers, it means choosing not to buy or use products or services that are not needed or are unsustainable, thereby preventing waste creation. For producers, it involves refusing the use of specific hazardous materials and designing production processes to avoid waste. This approach is integral to shifting towards a more post-material lifestyle and reducing packaging waste.
+
+    \item[R1: Reduce] — Reduce is used in a consumer-oriented, producer-oriented, and generic sense. It encompasses using products less frequently, with more care, and for longer, and making repairs for life extension. For producers, it involves using less material per unit of production, a concept known as dematerialization. It also includes participation in the sharing economy through pooling and sharing products.
+
+    \item[R2: Resell/Reuse] — Resell and Reuse involve bringing products back into the economy after initial use, either by reselling or reusing them for the same or a different purpose. This concept includes direct reuse of products such as second-hand sales and reuse in fabrication like refurbishment and remanufacturing. Quality inspections, minor repairs, and online consumer-to-consumer auctions are part of this strategy.
+
+    \item[R3: Repair] — Repair aims to extend the product's lifespan by bringing it back to working order, fixing minor defects, or replacing broken parts. It can be performed by various actors, including the customer, repair companies, or through non-commercial peer-to-peer repair workshops. Planned repairs and ad-hoc repairs are both included under this concept.
+
+    \item[R4: Refurbish] — Refurbishing typically applies to large multi-component products where many components are replaced or repaired, resulting in an overall upgrade of the product. This process brings the product up to a state-of-the-art level using newer, more advanced components, and is often seen in industries like aviation and construction.
+
+    \item[R5: Remanufacture] — Remanufacture involves disassembling, checking, cleaning, and replacing or repairing the full structure of a product in an industrial process. It is distinguished from refurbishing by the extent of disassembly and replacement of components, often resulting in a product that is like new but with a shorter expected lifespan due to the use of recycled components.
+
+    \item[R6: Repurpose] — Repurposing involves adapting discarded goods or components for another function, giving the material a distinct new lifecycle. This can result in both low and high-value end-products and is popular in industrial design and art communities. Examples include transforming defective microchips into jewellery or plastic sheeting into handbags.
+
+    \item[END OF CIRCULAR STRATEGIES] — The following strategies belong to the recovery system
+
+    \item[R7: Recycle Materials] — Recycling involves processing mixed streams of post-consumer products or post-producer waste streams using technological equipment to capture pure materials. It usually results in secondary materials that do not maintain any of the original product structure and can be re-applied anywhere. Recycling typically requires high energy inputs for collection and re-processing.
+
+    \item[R8: Recover (energy)] — Recovery primarily refers to capturing energy embodied in waste, linking it to incineration combined with producing energy, or the use of biomass. It is also used to describe the collection of used products for disassembly, sorting, and cleaning for utilization, and the extraction of elements or materials from end-of-life composites.
+
+    \item[R9: Re-mine] — Re-mining involves the retrieval of materials after the landfilling phase, including extracting valuable parts from disposed products and mining valuable resources stored in old landfills or urban mining. This practice is becoming more lucrative with technological advancements, allowing for the effective extraction of resources from waste stock.
+\end{description}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{130quantification/internal/cei/reike2018.jpg}
+    \caption[A detailled mapping of the re-X strategies in the circular economy]{A detailled mapping of the re-X strategies in the circular economy~\cite{reike2018rex}}
+    \label{fig:rex-map}
+\end{figure}
+\FloatBarrier
+
+\subsubsubsection{EU Circular Economy Indicators (CEIs)}
+
+See the EU working documents~\cite{eu2018cemonitoring} and~\cite{eu2023cemonitoring} for more detailled assssment of progress relating to the CEIs. \autoref{tab:eu2023ceprogress} presents an overview of the EU's CEIs including their target for 2023.
+
+\begin{table}[h!]
+  \centering
+  \includegraphics[height=0.9\textheight]{130quantification/internal/cei/eu2023ceprogress.png}
+  \caption[EU Circular Economy Indicators (CEIs) and their targets for 2023]{EU Circular Economy Indicators (CEIs) and their targets for 2023~\cite{eu2023cemonitoring}}
+  \label{tab:eu2023ceprogress}
+\end{table}
+
+\autoref{tab:cei} lists the relevant EU circular indicators (CEIs) along with their significance for FutuRaM's models and their changes between 2000--2022.
+
+\begin{landscape}
+    \centering
+    \small
+    \begin{longtable}{|C{2.5cm}|L{7cm}|C{6cm}|C{6cm}|C{1.5cm}|}
+    \caption{EU circular indicators (CEIs) and their significance for FutuRaM's models}\label{tab:cei}\\
+          \hline
+          \rowcolor{headerblue} % Applying the header color
+          \textcolor{white}{\textbf{CODE}} & \textcolor{white}{\textbf{TITLE}} & \textcolor{white}{\textbf{WS MODEL RELEVANCE}} & \textcolor{white}{\textbf{RECOVERY MODEL RELEVANCE}} & \textcolor{white}{\textbf{RATIO 2022:2000}} \\
+          \hline
+          \endfirsthead%
+          \hline
+          \multicolumn{5}{r}{\textcolor{headerblue}{\textit{{Continued on next page}}}} \\
+          \endfoot%
+          \rowcolor{white}
+          \multicolumn{5}{c}{{\textcolor{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}}} \\
+          \hline
+          \rowcolor{headerblue} % Applying the header color       
+          \textcolor{white}{\textbf{CODE}} & \textcolor{white}{\textbf{TITLE}} & \textcolor{white}{\textbf{WS MODEL RELEVANCE}} & \textcolor{white}{\textbf{RECOVERY MODEL RELEVANCE}} & \textcolor{white}{\textbf{RATIO 2022:2000}} \\ \hline
+          \endhead%
+          \bottomrule
+          \endlastfoot%
+      \csvreader[late after last line=\ , separator=semicolon]{csvs/cei_eu.csv}{}{
+        \csvcoli& \csvcolii& \csvcoliii& \csvcoliv& \csvcolv \\
+      } \\
+      \bottomrule
+    \end{longtable}
+  \end{landscape}
+
+
+\autoref{fig:cei} depicts the CEIs, their trends from 2000-2022, and their linear forecasts until 2050. An interactive figure can be viewed \href{https://futuram-project.github.io/FutuRaM.github.io/WP2/assets.html}{here~\faLink}. Note that the linear trends are not deemed to be representative of the actual future values, but are used to illustrate the trends and the magnitude of the changes. There will be constraints defined to limit and shape the growth of the CEIs in each of the scenarios. The settings for this will be determined from the waste stream quantification and the scenario storylines.
+
+\begin{landscape}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=1\linewidth]{130quantification/internal/cei/cei_eu.png}
+        \caption{EU Circular Economy Indicators (CEIs) - trends from 2000-2022 and linear forecasts}
+        \label{fig:cei}
+    \end{figure}
+\end{landscape}
+    
+
+
+
+\subsectionEndline
+\clearpage
+
+\subsection{Summary}
+
+
+The environmental and socio-economic impacts of raw material use are most effectively addressed at the product group level. Examining a product group as a whole, rather than focusing on individual resources or materials, allows for a comprehensive understanding and management of its utilisation and the environmental impacts across the production chain and product lifecycle~\cite{pbl2021ce}. 
+
+Additionally, setting impact targets for product groups aligns more closely with the capacity of stakeholders within the chain to modify resource usage or mitigate related environmental impacts.
+
+Although the nature and magnitude of raw material use impacts can differ significantly among product groups, necessitating tailored impact targets, there is also a need for simplicity in target setting. A manageable and communicable approach for governments is to aim for a significant reduction, such as halving the environmental impact at the product group level. 
+
+The benefit of establishing more general effect targets lies in the flexibility it offers for varying focuses across different product groups. A target set at the product group level is not only clear and easily communicable but also acknowledges the complexity and diversity inherent in a circular economy.
+
+
+\boxreview{This section will be completed once the individual waste stream sections for each parameter are complete.}
+\clearpage
+
+% pull in the other subsections
+\input{134a-quantification_cei_euindicators_description}
+\clearpage
+\input{134a-quantification_cei_euindicators_scenarios}
+\clearpage
+
+\input{134b-quantification_cei_refuse-reuse_description}
+\clearpage
+\input{134b-quantification_cei_refuse-reuse_scenarios}
+\clearpage
+
+\input{134c-quantification_cei_repair_description}
+\clearpage
+\input{134c-quantification_cei_repair_scenarios}
+\clearpage
+
+\input{134d-quantification_cei_remanufacture_description}
+\clearpage
+\input{134d-quantification_cei_remanufacture_scenarios}
+\clearpage
+
+\input{134e-quantification_cei_sharing_description}
+\clearpage
+\input{134e-quantification_cei_sharing_scenarios}
+\clearpage
+
+
+\subsubsection{Conclusion}
+
+
+\boxreview{This conclusion will be compiled once the individual waste stream sections for each parameter are complete.}
+
+
+\sectionEndlines
+\clearpage

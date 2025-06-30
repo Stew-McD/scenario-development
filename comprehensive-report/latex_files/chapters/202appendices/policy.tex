@@ -1,0 +1,31 @@
+\breaksection{List of relevant policy actions}\label{appendix:policy}
+
+The following table contains a description of policy actions that are relevant to the future of secondary raw material supply in the EU.
+
+\begin{landscape}
+  \centering
+  \small
+  \begin{longtable}{|L{12cm}|L{3cm}|L{1.5cm}|L{2cm}|L{3.0cm}|L{1.5cm}|}
+    \caption{List of relevant policy actions}\label{tab:policy}\\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    \color{white}\textbf{POLICY} & \color{white}\textbf{STATE} & \color{white}\textbf{YEAR} & \color{white}\textbf{STATUS} & \color{white}\textbf{JURISDICTION} & \color{white}\textbf{LINK} \\
+    \hline
+    \endfirsthead%
+    \hline
+    \multicolumn{6}{r}{\textcolor{headerblue}{\textit{{Continued on next page}}}} \\
+    \endfoot%
+    \rowcolor{white}
+    \multicolumn{6}{c}{{\textcolor{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}}} \\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    \color{white}\textbf{POLICY} & \color{white}\textbf{STATE} & \color{white}\textbf{YEAR} & \color{white}\textbf{STATUS} & \color{white}\textbf{JURISDICTION} & \color{white}\textbf{LINK} \\
+    \endhead%
+    \bottomrule
+    \endlastfoot%
+    \csvreader[late after last line=\ , separator=semicolon]{csvs/policy.csv}{}{
+      \csvcoli& \csvcolii& \csvcoliii& \csvcoliv& \csvcolv& \csvcolvi\\
+      \hline
+    }
+  \end{longtable}
+\end{landscape}

@@ -1,0 +1,19 @@
+\thispagestyle{empty}
+\hypertarget{titlepage}{}
+\pdfbookmark[1]{Title Page}{titlepage}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{000FutuRaM_titlepage.pdf}};
+  
+  % Position and style your text here
+  \node[align=left, text=white, font=\bfseries\Huge, anchor=west] (firstNode) at ([xshift=2cm]current page.west) {
+    Work Package 2};
+
+  \node[align=left, text=white, font=\bfseries\huge, anchor=center] (secondNode) at ([xshift=1.5cm, yshift=-1.2cm]firstNode.south) {Future Availability of \\ Secondary Raw Materials};
+  
+  \node[align=left, text=white, font=\bfseries\Large, anchor=center] (thirdNode) at ([xshift=1cm, yshift=-1cm]secondNode.south) {
+    Scenario Storylines \& Scenario Quantification \\
+    Draft Report --- Version 3
+  };
+\end{tikzpicture}
+

@@ -1,0 +1,46 @@
+H,E,A,D,E,R,X,Y
+5.3,HREE (rest),\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+4.8,Gallium,\textcolor{red}{\faCircle}, , , ,\textcolor{black}{\faCircle}, 
+4.4,Niobium,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, , 
+4.1,Magnesium,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+4.1,REE (magnets),\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, ,\textcolor{black}{\faCircle}
+3.8,Boron,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+3.5,LREE (rest),\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+3.3,Phosphorus,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle}, , ,\textcolor{black}{\faCircle}, 
+2.7,PGM,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+2.6,Strontium,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+2.4,Scandium,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+2.3,Vanadium,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+1.9,Lithium,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle}, , , , 
+1.8,Geranium,\textcolor{red}{\faCircle}, , , ,\textcolor{black}{\faCircle}, 
+1.8,Natural graphite,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, , , 
+1.8,Antimony,\textcolor{red}{\faCircle}, , , ,\textcolor{black}{\faCircle}, 
+1.7,Cobalt,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, , , 
+1.6,Arsenic,\textcolor{red}{\faCircle}, , , ,\textcolor{black}{\faCircle}, 
+1.4,Silicon metal,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+1.3,Baryte,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+1.3,Tantalum,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+1.2,Manganese,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, , ,\textcolor{black}{\faCircle}
+1.2,Tungsten,\textcolor{red}{\faCircle}, ,\textcolor{black}{\faCircle}, , , 
+1.2,Aluminium,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+1.1,Fluorspar,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle}, , ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.9,Tin, , ,\textcolor{black}{\faCircle}, ,\textcolor{black}{\faCircle}, 
+0.8,Molybdenum, , ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.8,Silver, , ,\textcolor{black}{\faCircle}, ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.8,Zirconium, , ,\textcolor{black}{\faCircle}, , , 
+0.7,Chromium, , ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, ,\textcolor{black}{\faCircle}
+0.7,Potash, , ,\textcolor{black}{\faCircle}, , , 
+0.6,Indium, , , , ,\textcolor{black}{\faCircle}, 
+0.5,Nickel,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.5,Iron ore, ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.5,Titanium, , ,\textcolor{black}{\faCircle}, , , 
+0.4,Gold, , ,\textcolor{black}{\faCircle}, , ,\textcolor{black}{\faCircle}
+0.3,Tellurium, , , , ,\textcolor{black}{\faCircle}, 
+0.3,Limestone, , ,\textcolor{black}{\faCircle}, , , 
+0.3,Selenium, , , , ,\textcolor{black}{\faCircle}, 
+0.3,Silica, , , ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, 
+0.2,Cadmium, , , , ,\textcolor{black}{\faCircle}, 
+0.2,Zinc, , ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.1,Copper,\textcolor{red}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}
+0.1,Aggregates, , , ,\textcolor{black}{\faCircle}, , 
+0.1,Lead, , , ,\textcolor{black}{\faCircle},\textcolor{black}{\faCircle}, 

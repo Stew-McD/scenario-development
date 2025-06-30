@@ -1,0 +1,30 @@
+\breaksection{Drivers and factors identified in the screening phase}\label{appendix:elements-2}
+
+The following table lists the scenario elements that were identified in the screening phase of driver/factor collection.
+
+\begin{landscape}
+  \centering
+  \small
+  \begin{longtable}{|L{3.5cm}|L{6cm}|L{11cm}|L{0.9cm}|L{0.9cm}|L{0.9cm}|}
+    \caption{List of drivers and factors identified in the screening phase}\label{tab:elements-2}\\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    \color{white}\textbf{DOMAIN} & \color{white}\textbf{DRIVER/FACTOR} & \color{white}\textbf{DEFINITION} & \color{white}\textbf{BAU} & \color{white}\textbf{REC} & \color{white}\textbf{CIR} \\
+    \hline
+    \endfirsthead%
+    \hline
+    \multicolumn{6}{r}{\textcolor{headerblue}{\textit{{Continued on next page}}}} \\
+    \endfoot%
+    \rowcolor{white}
+    \multicolumn{6}{c}{{\textcolor{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}}} \\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    \color{white}\textbf{DOMAIN} & \color{white}\textbf{DRIVER/FACTOR} & \color{white}\textbf{DEFINITION} & \color{white}\textbf{BAU} & \color{white}\textbf{REC} & \color{white}\textbf{CIR} \\    \hline
+    \endhead%
+    \bottomrule
+    \endlastfoot%
+    \csvreader[late after last line=\ , separator=semicolon]{csvs/elements-2.csv}{}{
+      \csvcoli& \csvcolii& \csvcoliii& \csvcoliv& \csvcolv& \csvcolvi\\
+    }
+  \end{longtable}
+\end{landscape}

@@ -1,0 +1,37 @@
+
+\pagenumbering{roman} % roman page numbering for front matter (iv) 
+\input{chapters/000frontmatter/001titlepage.tex}
+{
+    \input{scratch/001itsadraft.tex} %! DELETE LATER
+}
+
+% Page style for front matter
+\pagecolor{white}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+\renewcommand\thesection{\Roman{section}} % Roman numbering for sections (IV)
+\pagestyle{fancy}
+\chapter{Front Matter}\label{chapter:frontmatter}
+\addcontentsline{lot}{chapter}{Front Matter}
+\addcontentsline{lof}{chapter}{Front Matter}
+\fancyhead[L]{\hyperref[chapter:frontmatter]{\textsc{Front Matter}}}
+\localtableofcontents % Add a local ToC
+
+% Include the front matter sections
+\input{000frontmatter/002reportdetails}
+\input{000frontmatter/003preface}
+\begingroup
+\let\clearpage\relax
+\newpage
+\input{000frontmatter/004contents}
+\newpage
+\input{000frontmatter/005tables}
+\newpage
+\input{000frontmatter/006figures}
+\endgroup
+\input{000frontmatter/007executive_summary}
+\input{000frontmatter/008scenario_summaries}
+\input{000frontmatter/009abbreviations}
+\input{000frontmatter/010terminology_short}
+\input{000frontmatter/011tasks}
+
+\chapterEndlines

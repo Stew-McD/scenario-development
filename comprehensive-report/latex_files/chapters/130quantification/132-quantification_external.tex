@@ -1,0 +1,184 @@
+
+\breaksection{External elements}\label{sec:quantification_external}
+
+\subsection{Introduction}
+
+\boxgreen{\textbf{External drivers}}{
+        \textbf{Scenario elements}
+        \begin{itemize}
+          \item \textbf{Demographic change:} \\ population, median age, urbanisation, gender 
+          \item \textbf{Economic growth:} \\ GDP
+          \item \textbf{Renewable energy transition:} \\ energy mix
+        \end{itemize}
+        \textbf{Waste model parameters include:}
+        \begin{itemize}
+          \item \textbf{Put-on-market}
+          \item \textbf{Composition}
+        \end{itemize}
+        \textbf{Recovery model parameters include:}
+        \begin{itemize}
+          \item \textbf{Recovery processes:} \\ market penetration of recovery technologies
+          \item \textbf{Transfer coefficients:} \\ function of recovery technologies
+          \item \textbf{Recovery system size:} \\ BAU - set by trends in BAU, CIR \& REC - defined by model outcomes within constraints
+        \end{itemize}
+        \textbf{Impact model parameters include:}
+        \begin{itemize}
+          \item \textbf{Foreground inventory:} \\ inputs and outputs of recovery system
+          \item \textbf{Background inventory:}\\  energy mix, impact of primary production
+        \end{itemize}
+          }
+
+
+In the FutuRaM project, scenario elements are categorised based on their influence and relevance to the secondary raw material (SRM) system. This categorization aids in refining the focus of the scenarios and ensuring they are relevant, manageable and useful.
+
+Following the process detailed in \autoref{chapter:methodology}, several scenario elements were classified as "external" or "outside". 
+
+The following "external" elements are incorporated into the scenarios as background information but are not directly modelled. They are assumed to be constant across the three scenarios, but change over time.
+
+\begin{itemize}
+    \item Demographic change 
+    \item Economic growth  
+    \item Renewable energy transition 
+\end{itemize}
+
+The following "outside" elements are not incorporated into the scenarios, but are considered important and will be explored in sensitivity analysis and optimisation.
+
+\begin{itemize}
+    \item Resource supply constraints 
+    \item International trade and co-operation 
+    \item Re-industrialisation of EU 
+    \item Resistance to recovery projects ("NIMBY") 
+\end{itemize}
+
+These elements are detailed in \autoref{tab:elements-external}.
+
+\begin{landscape}
+\begin{table}[h!]
+    \centering
+    \small
+    \caption{List of external scenario elements}\label{tab:elements-external}
+    \begin{tabular}{|C{1.5cm}|L{6cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1cm}|C{1cm}|C{1cm}|L{6cm}|}
+      \hline
+      \rowcolor{headerblue} % Applying the header color
+      \textcolor{white}{\textbf{DOMAIN}} & \textcolor{white}{\textbf{ELEMENT}} & \textcolor{white}{\textbf{INTERNAL}} & \textcolor{white}{\textbf{EXTERNAL}} & \textcolor{white}{\textbf{OUTSIDE}} & \textcolor{white}{\textbf{BAU}} & \textcolor{white}{\textbf{REC}} & \textcolor{white}{\textbf{CIR}} & \textcolor{white}{\textbf{MODEL PARAMETERS AFFECTED}} \\
+      \hline
+      ECO & Progress toward renewable energy targets & & \checkmark & & - & - & - & composition, demand, waste generation, recovery impacts \\
+      ECO & Economic growth & & \checkmark & & - & - & - & composition, demand, waste generation \\
+      SOC & Population & & \checkmark & & - & - & - & demand, waste generation \\
+      ECO & Primary vs. secondary raw material prices & & \checkmark & & \textasciitilde & \textasciitilde & \textasciitilde & considered in sensitivity analysis \\
+      ECO & Energy prices & & \checkmark & & \textasciitilde & \textasciitilde & \textasciitilde & considered in sensitivity analysis \\
+      ECO & Carbon price & & \checkmark & & \textasciitilde & \textasciitilde & \textasciitilde & considered in sensitivity analysis \\
+      ENV & Resource supply constraints & & \checkmark & & \textasciitilde & \textasciitilde & \textasciitilde & considered in sensitivity analysis: \\
+      ECO & International trade and co-operation (vs. autarky) & & & \checkmark & n/a & n/a & n/a & not model input (resource supply constraints is a proxy) \\
+      ECO & Re-industrialisation of EU & & & \checkmark & n/a & n/a & n/a & not model input \\
+      SOC & Resistance to recovery projects (NIMBY) & & & \checkmark & n/a & n/a & n/a & not model input (considered in UNFC assessments) \\
+      \hline
+    \end{tabular}
+  \end{table}
+\end{landscape}
+
+\clearpage
+\subsection{Summary}
+
+\boxreview{This summary will be compiled once the individual waste stream sections for each parameter are complete.}
+
+\subsubsection{Demographic change}
+
+
+\subsubsubsection{Independent variables}
+    \begin{itemize}
+        \item Population
+        \item Median age
+        \item Urbanisation
+    \end{itemize}
+    
+\subsubsubsection{Dependent variables}
+    \begin{itemize}
+        \item Demand
+        \item Waste generation
+        \item Waste composition
+    \end{itemize}
+
+\subsubsection{Economic growth}
+
+
+\subsubsubsection{Independent variables}
+    \begin{itemize}
+        \item GDP growth
+    \end{itemize}
+    
+\subsubsubsection{Dependent variables}
+    \begin{itemize}
+        \item Demand
+        \item Waste generation
+        \item Waste composition
+    \end{itemize}
+
+\subsubsection{Renewable energy transition}
+
+
+\subsubsubsection{Independent variables}
+    \begin{itemize}
+        \item Energy mix
+    \end{itemize}
+    
+\subsubsubsection{Dependent variables}
+    \begin{itemize}
+        \item Demand
+        \item Waste generation
+        \item Waste composition
+        \item Recovery impacts
+    \end{itemize}
+
+\subsubsection{Resource supply constraints}
+
+\boxnote{This element is not forecast or modelled directly, but is considered in sensitivity analysis and optimisation. \\ Supply constraint is independent of its cause (e.g. resource depletion, political instability), thus, it can act as a proxy for other elements such as international trade and co-operation.}
+
+\subsubsubsection{Independent variables}
+    \begin{itemize}
+        \item Resource availability
+    \end{itemize}
+
+\subsubsubsection{Dependent variables}
+    \begin{itemize}
+        \item Resource prices
+        \item Settings of the recovery system to counteract supply crunch
+        \item Waste composition (incorporating lag and substitution effects)
+    \end{itemize}
+
+\subsubsubsection{Market dynamics}
+
+\boxnote{As with resource supply constraints, consideration of complex market dynamics are limited to sensitivity analysis and optimisation. General trend forecasts in supply and demand are considered in the scenarios, however, as functions of the other elements, such as GPD and population.}
+
+\subsubsubsection{Independent variables}
+    \begin{itemize}
+        \item Raw material prices
+        \item Secondary raw material prices
+    \end{itemize}
+
+\subsubsubsection{Dependent variables}
+    \begin{itemize}
+        \item Recovery system settings
+        \item Recovery system capacity
+        \item Recovery system profitability
+        \item Secondary raw material supply
+    \end{itemize}
+
+\subsectionEndline
+
+% bring in the separate sections
+\clearpage
+\input{132a-quantification_external_demographic}
+\clearpage
+\input{132b-quantification_external_economic}
+\clearpage
+\input{132c-quantification_external_energy}
+\clearpage
+\input{132d-quantification_external_supplyandmarkets}
+% \clearpage
+% \input{132e-quantification_external_supply}
+\clearpage
+
+\subsection{Conclusion}
+
+\boxreview{This conclusion will be compiled once the individual waste stream sections for each parameter are complete.}

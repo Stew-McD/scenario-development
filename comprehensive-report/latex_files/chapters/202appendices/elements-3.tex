@@ -1,0 +1,38 @@
+\breaksection{Drivers and factors after categorisation}\label{appendix:elements-3}
+
+
+The 21 elements that were identified in this stage are listed in \autoref{tab:keydrivers-appendix}.
+
+
+Note that CIR and REC are very similar for many scenario elements, the main difference being the way in which the targets are achieved. That is, for CIR, re-X strategies are promoted, whereas, for REC, the focus is on technological advancements in the recovery system. 
+
+
+This distinction will have a significant impact on how the scenarios are quantitatively modelled and on the subsequent outcomes of these models.
+
+\begin{landscape}
+  \centering
+  \small
+  \begin{longtable}{|L{2.0cm}|L{5cm}|L{8cm}|L{2cm}|L{0.9cm}|L{0.9cm}|L{0.9cm}|}
+    \caption{List of drivers and factors identified in the screening phase}\label{tab:keydrivers-appendix}                                                                                                                              \\
+    \hline
+    \rowcolor{headerblue}
+    \color{white}\textbf{DOMAIN} & \color{white}\textbf{DRIVER/FACTOR} & \color{white}\textbf{DEFINITION} & \color{white}\textbf{INTERNAL} & \color{white}\textbf{BAU} & \color{white}\textbf{REC} & \color{white}\textbf{CIR} \\
+    \hline
+    \endfirsthead%
+    \hline
+    \multicolumn{7}{r}{\color{headerblue}{\textit{{Continued on next page}}}}                                                                                                                                                  \\
+    \endfoot%
+    \rowcolor{white}
+    \multicolumn{7}{c}{{\color{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}}}                                                                                                                \\
+    \hline
+    \rowcolor{headerblue}
+    \color{white}\textbf{DOMAIN} & \color{white}\textbf{DRIVER/FACTOR} & \color{white}\textbf{DEFINITION} & \color{white}\textbf{INTERNAL} & \color{white}\textbf{BAU} & \color{white}\textbf{REC} & \color{white}\textbf{CIR} \\
+    \hline
+    \endhead%
+    \bottomrule
+    \endlastfoot%
+    \csvreader[late after last line=\ , separator=semicolon]{csvs/elements-3.csv}{}{
+    \csvcoli                     & \csvcolii                           & \csvcoliii                       & \csvcoliv                      & \csvcolv                  & \csvcolvi                 & \csvcolvii                \\
+    }
+  \end{longtable}
+\end{landscape}

@@ -1,0 +1,385 @@
+% ------------------------------------------------------------------------
+% Formatting starts here
+% ------------------------------------------------------------------------
+
+
+% Document Class
+\documentclass[a4paper]{report}
+% \documentclass[draft, a4paper]{report}
+\usepackage{ifdraft}
+
+% Custom Colour Definitions
+\usepackage[table, svgnames]{xcolor}               % Enable custom colours
+\definecolor{black}{RGB}{0,0,0}
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{captionblue}{RGB}{0, 0, 102}
+\definecolor{headerblue}{RGB}{67, 81, 175}
+\definecolor{fadedblue}{RGB}{242,244,255}
+\definecolor{greenlime}{RGB}{192, 217, 83}
+\definecolor{purple}{rgb}{0.5, 0, 0.5} 
+\definecolor{FMbluedark}{RGB}{3, 0, 102}
+\definecolor{FMgreen}{RGB}{41, 209, 146}
+\definecolor{magenta}{RGB}{184, 0, 131}
+
+% Encoding, Fonts, Text
+\usepackage[T1]{fontenc}          % Output font encoding for international characters
+\usepackage[utf8]{inputenc}       % Input encoding for special characters
+\usepackage{fontaxes}             % Additional font-related commands
+\usepackage[sfdefault]{cabin}     % Set Cabin as the default sans-serif font
+\usepackage{microtype}            % Improve typographic details
+\usepackage{titlesec}             % Customise section/chapter headers
+\usepackage{setspace}             % Allows custom line spacing
+\usepackage{amssymb}              % Additional math symbols, checkmark etc.
+\usepackage{etoolbox}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{xurl}
+\urlstyle{same}  % don't use monospace font for urls
+\robustify{\MakeUppercase}
+% \fontsize{11pt}{13.6pt}\selectfont\setstretch{1.05}  % Font size, line spacing, stretch
+
+% Bibliography
+\usepackage[backend=biber, style=numeric, sorting=none, sortcites=true, backref=true, defernumbers=true]{biblatex} % Bibliography setup
+\addbibresource{chapters/201references/references.bib}                                        % Specify bibliography file
+\defbibcheck{uncited}{%
+  \ifciteseen
+    {}
+    {\skipentry}
+}
+\def\UrlBreaks{\do\/\do-\do\_\do\%} % for breaking long URLS additonally
+
+% Page Layout and Geometry
+\usepackage{placeins}            % Allows use of \FloatBarrier
+\usepackage{float}
+\usepackage{changepage}           % Allows custom page layout
+\usepackage[most]{tcolorbox} 
+\usepackage[top=2.8cm, bottom=2.8cm, left=2.8cm, right=2.8cm]{geometry} % Page margins
+\usepackage{pdflscape}            % Allows landscape-oriented pages
+\usepackage{pdfpages}
+\usepackage{afterpage}            % Allows custom page layout
+\usepackage{lineno}               % Enables line numbering
+\usepackage{rotating}
+\setlength{\linenumbersep}{3.0em} % Set the space between line numbers and text
+\renewcommand\linenumberfont{\normalfont\tiny\color{gray}} % Set the line number font
+\setlength{\parskip}{1em}         % Set paragraph spacing
+
+% Extra subsubsubsection command
+\newcommand{\subsubsubsection}[1]{{\vspace{1em}\fontsize{12pt}{14.4pt}\selectfont\bfseries\textsc{#1}\par}}
+
+% Additional Packages
+\usepackage{calc}
+\usepackage{datetime}
+
+% Graphics
+\usepackage{tikz}
+\usepackage{newunicodechar}
+\usepackage{graphicx}             % Allows including graphics
+\usepackage{adjustbox}            % Adjust box sizes for various elements
+\usepackage{transparent}          % Allows transparency in graphics
+\graphicspath{{assets/}}          % Specifies the graphics directory
+
+% Commands for making text boxes
+\newcommand{\boxreview}[1]{
+  \noindent\begin{tcolorbox}[colback=red!5!white, colframe=black, title=REVIEW NOTICE, coltitle=white, colbacktitle=red!60!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+  #1
+    \end{tcolorbox}
+}
+\newcommand{\boxws}[1]{
+  \noindent\begin{tcolorbox}[colback=orange!5!white, colframe=black, title=WASTE STREAM NOTICE, coltitle=white, colbacktitle=orange!75!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+  #1
+    \end{tcolorbox}
+}
+\newcommand*{\boxnote}[2][NOTE]{
+  \noindent\begin{tcolorbox}[colback=purple!5!white, colframe=black, title=#1, coltitle=white, colbacktitle=purple!75!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+  #2
+    \end{tcolorbox}
+}
+\newcommand{\boxgreen}[2]{
+  \noindent\begin{tcolorbox}[colback=FMgreen!5!white, colframe=black, title=#1, coltitle=white, colbacktitle=FMgreen!75!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+  #2
+    \end{tcolorbox}
+}
+\newcommand{\boxblue}[2]{
+  \noindent\begin{tcolorbox}[colback=FMbluedark!5!white, colframe=black, title=#1, coltitle=white, colbacktitle=FMbluedark!60!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+  #2
+    \end{tcolorbox}
+}
+\newcommand{\boxblack}[2]{
+  \noindent\begin{tcolorbox}[colback=black!5!white, colframe=black, title=#1, coltitle=white, colbacktitle=black!60!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+  #2
+    \end{tcolorbox}
+}
+
+\newcommand{\boxmagenta}[2]{
+  \noindent\begin{tcolorbox}[colback=magenta!5!white, colframe=black, title=#1, coltitle=white, colbacktitle=magenta!60!black, width=0.9\textwidth, before=\vspace{3pt}, after=\vspace{3pt}, center]
+  \small
+        #2
+    \end{tcolorbox}
+}
+
+\newcommand{\boxparameter}[4]{
+  \noindent\begin{tcolorbox}[colback=FMbluedark!5!white, colframe=black, title=\textsc{Scenario trends for: }{#1}, coltitle=white, colbacktitle=FMbluedark!60!black, width=0.9\textwidth, before=\vspace{5pt}, after=\vspace{3pt}, center]
+    \small
+    \begin{description}[style=nextline, leftmargin=2cm]
+      \item[\iconBAU \textbf{Scenario I --- Business-as-usual:}] #2
+      \item[\iconREC \textbf{Scenario II --- Recovery:}] #3
+      \item[\iconCIR \textbf{Scenario III --- Circularity:}] #4
+    \end{description}
+
+    \end{tcolorbox}
+}
+
+\newcommand{\boxquote}[3]{
+  \noindent\begin{tcolorbox}[
+    enhanced,
+    colback=#1!5!white,
+    colframe=#1!20!white, 
+    width=1\textwidth,
+    before=\vspace{1pt},
+    after=\vspace{1pt},
+    center,
+    % fontupper=\large,
+    overlay={
+      \node[anchor=north west, text=black, opacity=0.2,font=\fontsize{20}{24}\selectfont] at (frame.north west) {\faQuoteLeft};
+      \node[anchor=south east, text=black, opacity=0.2, font=\fontsize{20}{24}\selectfont] at (frame.south east) {\faQuoteRight};
+    },
+    drop fuzzy shadow
+  ]
+  \vspace{0.3cm}
+  \small
+    #2\par
+    \raggedleft\emph{--- #3} \hspace{6em}
+  \vspace{0.2cm}
+  \end{tcolorbox}
+}
+
+% Commands for custom icons
+\newcommand{\coloredcircle}[1]{%
+  \tikz\shade[ball color=#1] (0,0) circle (1.0ex);
+}
+\newunicodechar{✔}{\textcolor{FMgreen}{\faCheckCircle}}
+
+% Commands to import icons into the text
+\newcommand{\iconSmallFutuRaM}[1]{\raisebox{-0.3\height}{\includegraphics[width=1cm]{icons/FutuRaM_#1-ICON.png}}\hskip 1em}
+\newcommand{\iconSmall}[1]{\raisebox{-0.35\height}{\transparent{0.9}{\includegraphics[width=1cm]{icons/#1.png}}}\hskip 1em}
+\newcommand{\iconBig}[1]{\begin{center}\raisebox{-0.5\height}{\transparent{0.9}{\includegraphics[width=2.5cm]{icons/#1.png}}}\end{center}}
+\newcommand{\logoFMcolor}{\vspace{-1cm}\transparent{0.8}\includegraphics[width=2cm]{logos/FutuRaM_Favicon_RGB-JPG.jpg}\vspace{0.5cm}}
+\newcommand{\logoFMwidecolour}[1]{\vspace{0em}\transparent{#1}\includegraphics[width=3cm]{logos/FutuRaM_baseline_blurr-SMALL.png}\par\vspace{0.0cm}}
+\newcommand{\logoFMwideBW}[1]{\vspace{0em}\transparent{#1}\includegraphics[width=3cm]{logos/FutuRaM_Baseline_BLACK-PNG.png}\par\vspace{0.0em}}
+
+\newcommand{\iconBATT}{\iconSmallFutuRaM{Battery}}
+\newcommand{\iconELV}{\iconSmallFutuRaM{ELV}}
+\newcommand{\iconCDW}{\iconSmallFutuRaM{Construction}}
+\newcommand{\iconMIN}{\iconSmallFutuRaM{Mining}}
+\newcommand{\iconSLASH}{\iconSmallFutuRaM{Slags}}
+\newcommand{\iconWEEE}{\iconSmallFutuRaM{Electric}}
+
+\newcommand{\iconCIR}{\iconSmall{circularity}}
+\newcommand{\iconREC}{\iconSmall{recovery}}
+\newcommand{\iconBAU}{\iconSmall{bau}}
+
+\newcommand{\iconCIRbig}{\iconBig{circularity}}
+\newcommand{\iconRECbig}{\iconBig{recovery}}
+\newcommand{\iconBAUbig}{\iconBig{bau}}
+
+
+% Custom commands for Waste stream headers with the icon on the left side of the title:
+\newcommand{\wasteSubsecBATT}{\subsection[BATT (Battery waste)]{\protect\scalebox{1.0}{\iconBATT} BATT (Battery waste)}}
+\newcommand{\wasteSubsecCDW}{\subsection[CDW (Construction and Demolition Waste)]{\protect\scalebox{1.0}{\iconCDW} CDW (Construction and Demolition Waste)}}
+\newcommand{\wasteSubsecELV}{\subsection[ELV (End-of-Life Vehicles)]{\protect\scalebox{1.0}{\iconELV} ELV (End-of-Life Vehicles)}}
+\newcommand{\wasteSubsecMIN}{\subsection[MIN (Mining Waste)]{\protect\scalebox{1.0}{\iconMIN} MIN (Mining Waste)}}
+\newcommand{\wasteSubsecSLASH}{\subsection[SLASH (Slags and Ashes)]{\protect\scalebox{1.0}{\iconSLASH} SLASH (Slags and Ashes)}}
+\newcommand{\wasteSubsecWEEE}{\subsection[WEEE (Waste Electrical and Electronic Equipment)]{\protect\scalebox{1.0}{\iconWEEE} WEEE (Waste Electrical and Electronic Equipment)}}
+
+\newcommand{\wasteSubsubsecBATT}{\subsubsection[BATT (Battery waste)]{\protect\scalebox{0.8}{\iconBATT} BATT (Battery waste)}}
+\newcommand{\wasteSubsubsecCDW}{\subsubsection[CDW (Construction and Demolition Waste)]{\protect\scalebox{0.8}{\iconCDW} CDW (Construction and Demolition Waste)}}
+\newcommand{\wasteSubsubsecELV}{\subsubsection[ELV (End-of-Life Vehicles)]{\protect\scalebox{0.8}{\iconELV} ELV (End-of-Life Vehicles)}}
+\newcommand{\wasteSubsubsecMIN}{\subsubsection[MIN (Mining Waste)]{\protect\scalebox{0.8}{\iconMIN} MIN (Mining Waste)}}
+\newcommand{\wasteSubsubsecSLASH}{\subsubsection[SLASH (Slags and Ashes)]{\protect\scalebox{0.8}{\iconSLASH} SLASH (Slags and Ashes)}}
+\newcommand{\wasteSubsubsecWEEE}{\subsubsection[WEEE (Waste Electrical and Electronic Equipment)]{\protect\scalebox{0.8}{\iconWEEE} WEEE (Waste Electrical and Electronic Equipment)}}
+
+\newcommand{\wasteSubsubsubsecBATT}{\scalebox{0.6}{\noindent\iconBATT}\hspace{1em}\subsubsubsection{BATT (Battery waste)}}
+\newcommand{\wasteSubsubsubsecCDW}{\scalebox{0.6}{\iconCDW}\hspace{1em}\subsubsubsection{CDW (Construction and Demolition Waste)}}
+\newcommand{\wasteSubsubsubsecELV}{\scalebox{0.6}{\iconELV}\hspace{1em}\subsubsubsection{ELV (End-of-Life Vehicles)}}
+\newcommand{\wasteSubsubsubsecMIN}{\scalebox{0.6}{\iconMIN}\hspace{1em}\subsubsubsection{MIN (Mining Waste)}}
+\newcommand{\wasteSubsubsubsecSLASH}{\scalebox{0.6}{\iconSLASH}\hspace{1em}\subsubsubsection{SLASH (Slags and Ashes)}}
+\newcommand{\wasteSubsubsubsecWEEE}{\scalebox{0.6}{\iconWEEE}\hspace{1em}\subsubsubsection{WEEE (Waste Electrical and Electronic Equipment)}}
+
+% Commands for making end lines for chapters, sections, and subsections
+\usepackage{needspace}
+\newcommand{\chapterEndlines}{
+  \needspace{7\baselineskip}
+  \vspace*{2em}
+  \begin{tikzpicture}\fill[rounded corners=5pt, fill=FMbluedark, opacity=0.3] (0,0) rectangle (\linewidth,3pt);\end{tikzpicture}
+  \begin{center}\logoFMwidecolour{0.3}
+    \begin{tikzpicture}\fill[rounded corners=5pt, fill=FMgreen, opacity=0.3] (0,0) rectangle (.6\textwidth,3pt);\end{tikzpicture}
+  \end{center}
+  \vspace{1em}
+}
+
+\newcommand{\sectionEndlines}{
+  \needspace{4\baselineskip}
+  \vspace{2em}
+  \noindent\rule{\linewidth}{2pt}
+  \begin{center}
+    \rule{.8\textwidth}{2pt}
+  \end{center}
+  \vspace{1em}
+}
+
+\newcommand{\subsectionEndline}{
+  {\centering\rule{.8\textwidth}{2pt}\par}
+  \vspace{2em}
+}
+
+% Customise lists
+\usepackage{enumitem}            
+\setlist[description]{style=nextline,labelwidth=0pt,leftmargin=30pt,itemindent=\dimexpr-20pt-\labelsep\relax} % Optional Global Setup 
+
+\setlist[itemize]{label=\textcolor{greenlime}{{\Large\textbullet}}, leftmargin=1.5cm, itemsep=2pt, parsep=4pt, before={\RaggedRight}, after={\parfillskip=0pt}}  % Custom bullet style
+\setlist[itemize,2]{label=\textcolor{captionblue}{\textendash}, leftmargin=1cm, itemsep=1pt, parsep=1pt, before={\RaggedRight}, after={\parfillskip=0pt}}  % Custom bullet style
+\setlist[itemize,3]{label=\textcolor{greenlime}{\textdegree}, leftmargin=0.5cm, itemsep=0pt, parsep=1pt, before={\RaggedRight}, after={\parfillskip=0pt}}  % Custom bullet style with smaller circle
+
+% Caption Settings
+\usepackage[width=.8\textwidth]{caption}
+\captionsetup{font={it,color=headerblue},singlelinecheck=false,justification=raggedright, labelsep=colon}
+
+% Tables
+\usepackage{multirow}             % Multi-row cells in tables
+\usepackage{booktabs}             % Professional quality tables
+\usepackage{colortbl}             % Colour table cells/rows
+\usepackage{tabularx}             % Extended table environment
+\usepackage{longtable}            % Allows tables to break across pages
+\usepackage{csvsimple}            % Read .csv files into tables
+\usepackage{array}                % Additional table-related commands
+
+% Table settings
+\newcolumntype{B}{>{\columncolor{fadedblue}\bfseries}X}
+\newcolumntype{D}{>{\bfseries}X}
+\newcolumntype{E}{>{\columncolor{white}}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\setlength{\tabcolsep}{3pt}
+\setlength{\extrarowheight}{3pt}
+
+% Commands for alternating row colours
+\newcommand{\headerrow}{\rowcolor{fadedblue}\bfseries\textcolor{white}}
+\newcommand{\altrowcolors}{\rowcolors{2}{white}{fadedblue}}
+
+% alternate colours for all tables
+\let\oldtabular\tabular
+\let\endoldtabular\endtabular
+\renewenvironment{tabular}{\rowcolors{2}{white}{fadedblue}\oldtabular}{\endoldtabular}
+
+% alternate rowcolors for all long-tables
+\let\oldlongtable\longtable
+\let\endoldlongtable\endlongtable
+\renewenvironment{longtable}{\rowcolors{2}{white}{fadedblue}\oldlongtable} {
+  \endoldlongtable}
+
+% Set title formats
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\titleformat{\chapter}[display]{\normalfont\fontsize{40pt}{40pt}\selectfont\bfseries\centering}{\logoFMcolor}{-0.1ex}{}[\thispagestyle{fancy}]
+\titleformat{\section}{\normalfont\fontsize{18pt}{22pt}\selectfont\scshape\RaggedRight}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\fontsize{16pt}{14.4pt}\selectfont\bfseries\RaggedRight}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}{\normalfont\fontsize{14pt}{14.4pt}\selectfont\bfseries\itshape\RaggedRight}{\thesubsubsection.}{1em}{}
+
+
+% Make sections start on a new page
+\newcommand{\breaksection}{\clearpage\section}
+\usepackage{etoc}                 % Local Tables of Contents
+\renewcommand{\etocbeforetitlehook}{\setstretch{1}}
+
+% \renewcommand\localcontentsname{Chapter Contents}
+
+% Hyperlink settings
+\usepackage[hidelinks]{hyperref}             % Enable hyperlinks in the document
+\hypersetup{
+pdftitle={FutuRaM | WP2 | Future Scenarios},  
+pdfauthor={Stewart Charles McDowall},  
+pdfsubject={FutuRaM Project | Work Package 2 | Future Scenarios}, 
+pdfkeywords={FutuRaM, Scenario Storylines, Secondary Raw Materials, Work Package 2},
+pdfcreator={pdflatex},
+}
+
+\DeclareFieldFormat{url}{\mkbibacro{URL}\addcolon\space\href{#1}{\faExternalLink}}
+% Header and Footer
+\usepackage{fancyhdr}                            % Customise headers/footers
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ #1}}
+\fancyhead[R]{\textsc{\nouppercase{\rightmark}}}
+
+\setlength{\footskip}{1.5cm}                     % Set the space from the bottom of the page to the baseline of the footer
+\pagestyle{fancy}                                % Enable custom headers/footers
+\fancyhf{} % Clear all headers and footers first
+\fancyfoot[C]{\hspace{-5cm}\hyperref[sec:Contents]{\textbf{Back to ToC}}}
+\fancyfoot[L]{\raisebox{-0.25cm}{\includegraphics[width=0.67cm, height=0.67cm]{logos/FutuRaM_Favicon_BLACK-PNG.png}}}
+\fancyfoot[R]{\textcolor{black}{WP2: Scenario Storylines \textbar{} \url{www.futuram.eu} \textbar{} \thepage}}
+\fancyhead[R]{\textsc{\nouppercase{\rightmark}}}
+% \fancyhead[L]{\textsc{\leftmark}}
+
+
+% ---------------------------------------------------------------------
+%  Document starts here
+% ---------------------------------------------------------------------
+
+\begin{document}
+\linenumbers
+
+% front matter
+\include{chapters/000frontmatter}
+
+%  main matter
+\begingroup
+
+\pagenumbering{arabic}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\include{chapters/110methodology}
+\include{chapters/120storylines}
+\include{chapters/130quantification}
+\include{chapters/140interpretation}
+\include{chapters/150modelling-waste}
+\include{chapters/160modelling-recovery}
+\include{chapters/170modelling-integration}
+\include{chapters/180impacts}
+\include{chapters/190bottlenecks}
+\include{chapters/200conclusion}
+\include{chapters/201references}
+\include{chapters/202appendices}
+
+\endgroup
+
+\pagestyle{empty}
+
+% end of report
+\vspace*{\fill}
+\begin{center}
+  \rule{.8\textwidth}{2pt}
+  \rule{1\textwidth}{2pt}
+  \vspace{3em}
+
+  {\Huge\textbf{END OF REPORT}\par}
+
+  \vspace{3em}
+  \rule{1\textwidth}{2pt}
+  \rule{.8\textwidth}{2pt}
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+\includepdf{assets/999FutuRaM_endpage.pdf}
+
+\end{document}

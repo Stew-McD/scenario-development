@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Icon"
+   viewBox="0 0 500 500"
+   version="1.1"
+   sodipodi:docname="FutuRaM_Battery-ICON.svg"
+   inkscape:export-filename="FutuRaM_Battery-ICON.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.6675088"
+     inkscape:cx="298.12341"
+     inkscape:cy="284.64044"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Icon" />
+  <path
+     d="M 305.28701,67.400885 V 280.79491 H 91.892987 V 67.400885 H 305.28701 M 322.18,50.507898 H 75 V 297.6879 h 247.18 z"
+     id="path2"
+     style="stroke-width:0.706229" />
+  <path
+     d="M255.16,138.29v-15.45H123.59v73.47H255.16v-15.45h18.43v-42.57h-18.43Zm-47.72,27.84l-35.18,21.28,15.24-21.94-11.7-12.46,35.18-21.28-15.24,21.94,11.7,12.46Z"
+     id="path5" />
+</svg>

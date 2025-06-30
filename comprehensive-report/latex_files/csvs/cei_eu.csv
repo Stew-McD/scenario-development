@@ -1,0 +1,14 @@
+code;title;WS model relevance;Recovery model relevance;Trend 2020-2022
+CEI\_CIE011;Persons employed in circular economy sectors;Product technology, lifetimes, collection rates;Capacity;1.28
+CEI\_CIE012-GVA;Gross added value related to circular economy sectors;Product technology, lifetimes, collection rates;Capacity;1.4
+CEI\_CIE012-INV;Private investment related to circular economy sectors;Product technology, lifetimes;Process technology;0.8
+CEI\_CIE020;Patents related to recycling and secondary raw materials;Product technology, lifetimes;Process technology;0.8
+CEI\_PC020;Material footprint;Demand;Efficiency;0.89
+CEI\_PC030;Resource productivity;Demand;Capacity;1.38
+CEI\_PC031;Generation of municipal waste per capita;Waste generation;Capacity;1.03
+CEI\_PC032;Generation of waste excluding major mineral wastes per GDP unit;Waste generation;Capacity;0.86
+CEI\_PC034;Waste generation per capita;Waste generation;Capacity;0.93
+CEI\_SRM030;Circular material use rate;Collection rates;Capacity;1.41
+CEI\_WM010;Recycling rate of all waste excluding major mineral waste;Collection rates;Capacity;1.09
+CEI\_WM011;Recycling rate of municipal waste;Collection rates;Efficiency;1.78
+CEI\_WM060;Recycling rate of waste of electrical and electronic equipment (WEEE) separately collected;Collection rates;Efficiency;0.99
