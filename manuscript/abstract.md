@@ -1,9 +1,20 @@
 # Abstract
 
-This report presents the first phase of the scenario development process — the storyline narrative phase. Three distinct future scenarios have been drafted up to the year 2050: Business as Usual, Recovery, and Circularity. These scenarios are designed to be internally consistent and provide an overview of the potential future landscape of waste management and SRM recovery within the EU.
+## Alternative 1
 
-The scenario development process employs a methodology that integrates both forecasting and backcasting techniques to build a comprehensive, future-facing knowledge base that can aid fact-based decision-making~\cite{dreborg1996essence, boerjeson2005scenariosreport, boerjeson2005scenariosarticle, amer2013, sardesai2021, lloyd2014objectivity, ardente2014}.
+This paper presents the narrative construction phase of scenario development for exploring the future of waste management, secondary raw material (SRM), and critical raw material (CRM) recovery in the European Union (EU) through 2050. This phase supports qualitative projections within the EU Horizon 2020 project FutuRaM, which aims to develop a comprehensive knowledge base for future-oriented SRM strategies. Three internally consistent scenarios were developed—Business as Usual (BAU), Recovery (REC), and Circularity (CIR)—to reflect divergent political, economic, and technological trajectories.
 
-In the next phases of scenario development, future product composition and recovery technology will be assessed, scenario elements will be quantified, and all data will be integrated with the quantitative models for waste generation and SRM recovery.
+The scenarios include specific projections on the potential future composition and volume of seven key waste streams: Batteries (BATT), Construction and Demolition (C&D), End-of-Life Vehicles (ELV), Slags and Ashes (SLASH), and Waste Electrical and Electronic Equipment (WEEE).
 
-The FutuRaM project aims to offer a nuanced understanding of the potential future waste management and resource recovery landscape within the EU. This approach provides insights into key drivers, uncertainties, and the possible impacts of policy and technological advancements. Additionally, by aligning SRM recovery efforts with the United Nations Framework Classification for Resources (UNFC)~\cite{unfc2023}, the project aims to facilitate the commercial exploitation of SRMs and CRMs by manufacturers, recyclers, and investors. With the comprehensive knowledge base that we are developing, FutuRaM aims to support informed decision-making by policymakers and government, as well as industry and community stakeholders.
+The work followed a structured methodology combining forecasting and backcasting, identification of key drivers and uncertainties, stakeholder engagement through workshops, and the development of coherent narrative storylines grounded in current trends, stated goals, and published forecasts.
+
+These narratives serve as a qualitative foundation for future quantification and modeling of waste generation and SRM recovery potential. They support strategic planning by providing insight into systemic factors influencing material flows and recovery pathways, and can inform tools such as life cycle assessment (LCA) and material flow analysis (MFA).
+
+## Alternative 2
+
+This paper presents the narrative construction phase of scenario development aimed at exploring future pathways for waste management, secondary raw material (SRM), and critical raw material (CRM) recovery within the European Union (EU) up to 2050. Three internally consistent scenarios—Business as Usual (BAU), Recovery (REC), and Circularity (CIR)—were developed to reflect divergent political, economic, and technological trajectories.
+Each scenario includes detailed qualitative projections of the future composition and volumes of five key waste streams: Batteries (BATT), Construction and Demolition (C&D), End-of-Life Vehicles (ELV), Slags and Ashes (SLASH), and Waste Electrical and Electronic Equipment (WEEE). 
+
+The scenario development employed a structured approach integrating forecasting and backcasting techniques, identification of key drivers and uncertainties, extensive stakeholder engagement via workshops, and the creation of coherent narrative storylines based on current trends, stated policy goals, and published forecasts. 
+
+These narratives provide a foundation for subsequent quantitative modeling of waste generation and SRM recovery potentials, and support strategic decision-making by offering insights into systemic factors that influence material flows and resource recovery pathways. They further facilitate application in analytical tools such as life cycle assessment (LCA) and material flow analysis (MFA).
