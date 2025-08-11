@@ -1,0 +1,22 @@
+Domain;Element;Definition;Internal;BAU;REC;CIR
+TECH;Recovery technology;Implementation and advancements in waste recovery technologies;TRUE;I;III;III
+TECH;Product technology;Changes in product function or composition;TRUE;I;III;III
+TECH;Integration of SRM system across EU;Integration of a secondary raw material recovery system across EU countries;TRUE;I;III;III
+ENV;Increased drive for environmental protection;Growing concern and motivation for environmental conservation;TRUE;I;III;III
+ECO;Progress toward renewable energy targets;Advancements and achievements in renewable energy generation;TRUE;III;III;III
+ECO;Subsidies and taxation to promote circularity;Financial incentives or taxes to encourage circular economy;TRUE;I;II;III
+SOC;Participation in re-X activities;Engagement in refuse-reduce-repair-reuse activities;TRUE;I;I;III
+POL;Stricter environmental regulations;Tightening of environmental laws and regulations;TRUE;II;III;III
+POL;Stricter waste management regulations;Strengthening of waste management laws and regulations;TRUE;II;III;III
+POL;Supply chain due diligence laws: implementation and enforcement;Obligations for identifying and mitigating negative impacts in supply chains;TRUE;I;III;III
+POL;Compliance with waste targets;Meeting specific waste management and recycling targets;TRUE;I;III;III
+ENV;Resource shortages;Limited availability of natural resources;FALSE;n/a;n/a;n/a
+ECO;Raw material vs SRM prices;Price dynamics and competition between raw materials and secondary raw materials;FALSE;n/a;n/a;n/a
+ENV;Climate change impactsmitigation;Effects and actions related to climate change;FALSE;n/a;n/a;n/a
+ECO;International trade and co-operation (vs. autarky);Collaborative trade agreements and global cooperation;FALSE;n/a;n/a;n/a
+ECO;Energy prices;Costs and fluctuations in energy prices;FALSE;n/a;n/a;n/a
+ECO;Economic growth;Overall economic expansion and development;FALSE;n/a;n/a;n/a
+ECO;Re-industrialisation of EU;Shift towards increased industrial activities in the EU;FALSE;n/a;n/a;n/a
+SOC;NIMBY to projects;Opposition to local projects and developments;FALSE;n/a;n/a;n/a
+SOC;Population and urbanisation;Growth and urban development of population;FALSE;n/a;n/a;n/a
+ECO;CO2 market price;Price and market dynamics of carbon emissions;FALSE;n/a;n/a;n/a

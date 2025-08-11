@@ -1,0 +1,32 @@
+\breaksection{Scenario development methods}\label{appendix:methods}
+
+\autoref{tab:methods} provides an overview of the methods and tools considered, along with a brief description of each and its relevance to the specific context and objectives of the FutuRaM scenario development process.
+
+\begin{landscape}
+  \centering
+  \small
+  \begin{longtable}{|L{3cm}|L{7cm}|L{4cm}|L{5cm}|L{4cm}|}
+      \caption{Scenario development methods}\label{tab:methods}\\
+      \hline
+      \rowcolor{headerblue} % Applying the header color
+      \textbf{\textcolor{white}{METHOD}}& \textbf{\textcolor{white}{DESCRIPTION}}& \textbf{\textcolor{white}{KEY CHARACTERISTICS}}& \textbf{\textcolor{white}{LIMITATIONS}}& \textbf{\textcolor{white}{APPLICATION}}\\
+      \hline
+      \endfirsthead%
+      \hline
+      \multicolumn{5}{r}{\textcolor{headerblue}{\textit{{Continued on next page}}}} \\
+      \endfoot%
+      \rowcolor{white}
+      \multicolumn{5}{c}{{\textcolor{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}}} \\
+      \hline
+      \rowcolor{headerblue} % Applying the header color
+      \textbf{\textcolor{white}{METHOD}}& \textbf{\textcolor{white}{DESCRIPTION}}& \textbf{\textcolor{white}{KEY CHARACTERISTICS}}& \textbf{\textcolor{white}{LIMITATIONS}}& \textbf{\textcolor{white}{APPLICATION}}\\
+      \hline
+      \endhead%
+      \bottomrule
+      \endlastfoot%
+      \csvreader[late after last line=\ , separator=semicolon]{csvs/methods.csv}{}{
+        \csvcoli& \csvcolii& \csvcoliii& \csvcoliv& \csvcolv\\
+      }
+    \end{longtable}
+    
+\end{landscape}

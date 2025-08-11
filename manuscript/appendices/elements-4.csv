@@ -1,0 +1,22 @@
+DOMAIN;ELEMENT;INTERNAL;EXTERNAL;OUTSIDE;BAU;REC;CIR;MODEL PARAMETERS AFFECTED
+ECO;Subsidies and taxation to promote circular strategies;✔;;;I;I;III;demand, waste generation, lifetimes, sharing, collection, 
+POL;Targets and enforcement to promote circular strategies;✔;;;I;I;III;demand, waste generation, lifetimes, sharing, collection
+SOC;Participation in re-X activities;✔;;;I;I;III;demand, waste generation, lifetimes, sharing, collection, 
+ECO;Subsidies and taxation to promote recovery strategies;✔;;;I;III;I;recycling rates, recovery capacity, recovery impacts, collection
+POL;Targets and enforcement to promote recovery strategies;✔;;;I;III;I;recycling rates, recovery rates, capacity 
+POL;Supply chain due diligence laws;✔;;;I;III;III;composition, export
+POL;Stricter environmental regulations;✔;;;I;III;III;composition, waste generation, lifetimes, export,recovery rates, recovery capacity, recovery impacts
+POL;Stricter waste management regulations;✔;;;I;III;III;composition, waste generation, lifetimes, export, recovery rates, recovery capacity, recovery impacts
+TECH;Product technology;✔;;;I;III;III;lifetimes, recovery rates, recovery impacts
+TECH;Recovery technology;✔;;;I;III;III;recovery rates, recovery capacity, recovery impacts
+TECH;Integration of SRM recovery system across Europe;✔;;;I;III;III;recycling rates, recovery rates, recovery capacity, recovery impacts
+ECO;Progress toward renewable energy targets;;✔;;-;-;-;composition, demand, waste generation, recovery impacts
+ECO;Economic growth;;✔;;-;-;-;composition, demand, waste generation
+SOC;Population;;✔;;-;-;-;demand, waste generation
+ECO;Primary vs. secondary raw material prices;;✔;;n/a;n/a;n/a;considered in sensitivity analysis
+ECO;Energy prices;;✔;;n/a;n/a;n/a;considered in sensitivity analysis
+ECO;Carbon price;;✔;;n/a;n/a;n/a;considered in sensitivity analysis
+ENV;Resource supply constraints;;✔;;n/a;n/a;n/a;considered in sensitivity analysis:
+ECO;International trade and co-operation (vs. autarky);;;✔;n/a;n/a;n/a;not model input (resource supply constraints is a proxy)
+ECO;Re-industrialisation of EU;;;✔;n/a;n/a;n/a;not model input
+SOC;Resistance to recovery projects (NIMBY);;;✔;n/a;n/a;n/a;not model input (considered in UNFC assessments)

@@ -1,0 +1,32 @@
+\breaksection{Drivers and factors identified in the initial collection phase}\label{appendix:elements-1}
+
+\autoref{tab:elements-1} lists the elements that were identified in the initial phase of driver/factor collection.
+
+\begin{landscape}
+  \centering
+  \small
+  \begin{longtable}{|L{10cm}|L{13cm}|}
+    \caption{Drivers and factors identified in the initial collection phase}\label{tab:elements-1}\\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    \color{white}\textbf{METHOD} & \color{white}\textbf{DESCRIPTION} \\
+    \hline
+    \endfirsthead%
+    \hline
+    \multicolumn{2}{r}{\textcolor{headerblue}{\textit{{Continued on next page}}}} \\
+    \endfoot%
+    \rowcolor{white}
+    \multicolumn{2}{c}{\textcolor{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}} \\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    \color{white}\textbf{METHOD} & \color{white}\textbf{DESCRIPTION} \\
+    \hline
+    \endhead%
+    \bottomrule
+    \endlastfoot%
+    \csvreader[late after last line=\ , separator=semicolon]{csvs/elements-1.csv}{}{
+      \csvcoli& \csvcolii\\
+      \hline
+    }
+  \end{longtable}
+\end{landscape}

@@ -1,0 +1,29 @@
+TERM;MEANING;CONTEXT LEVEL;ALSO CALLED;SOURCE
+Scenario ;"An outline or model of an expected or supposed sequence of events. Plausible descriptions of how the future may develop based on a coherent and internally consistent set of assumptions about key driving forces. Plausible futures of a system under different conditions; “scenario’” as a “hypothetical sequence of events constructed for the purpose of focusing attention on causal processes and decision points ";Highest level ;Pathway, future typology ;\cite{ipcc2022land, kahn1967scenarios}
+Normative scenario ;Goal-oriented scenario: identify decisions and investments that must be made to achieve desired future outcomes. Example: Constraining cumulative emissions ;Scenario type ;Backcasting ;\cite{skea2021outlooks} 
+Exploratory scenario ;Exploration of plausible alternative developments to test whether decision-making is robust against different outcomes. Generally, involving a qualitative storyline about a possible future, complemented by quantitative analysis. Example: Socio-economic scenarios ;Scenario type ;Plausible scenarios ;\cite{skea2021outlooks} 
+Outlook ;To provide a most likely estimate of future trends as a guide for decision-making ;Scenario type ;Forecast, projection ;\cite{skea2021outlooks} 
+Scenario characteristics ;A combination of the vague attributes that make up the qualitative storyline for a scenario.  For example, in WEC (2019) the scenario titled Modern Jazz is described as:   “A market-led, digitally disrupted world with faster-paced and more uneven economic growth. Recent signals suggest that this entrepreneurial future might accelerate clean energy access on both global and local scales, whilst presenting new systems integration, cyber security and data privacy challenges” ;Scenario description ;Qualitative storyline descriptors ;\cite{skea2021outlooks} 
+Scenario scale ;Description of the spatial extent or temporal extent of a scenario. For us, mostly EU toward 2050. ;Scenario component ; ;\cite{arizona2023} 
+Scenario dimensions ;Uncertainties around which scenarios are constructed, represented as axes in some methods. In our case they might end up being, level of circularity, free-trade/autarky, progress in energy transition ;Scenario component ; ;\cite{arizona2023} 
+Scenario literature ;Journal articles, grey literature, etc., from which data is sourced that can be used to justify decisions in scenario development ;Scenario component ; ;\cite{skea2021outlooks} 
+Scenario logics ;Methods for structuring the relationships between different drivers and assumptions in scenarios ;Scenario component ; ;\cite{arizona2023} 
+Time horizon ;End date of the scenario’s forecast  ;Scenario attribute ; ;\cite{skea2021outlooks} 
+Snapshot ;The position of scenario/s at a particular point of time ;Scenario attribute ; ;\cite{skea2021outlooks} 
+Storyline and simulation ;Combination of qualitative narrative development and quantitative modelling ;Scenario component ; ;\cite{mahmoud2009scenarios, wollenberg2000}, in \cite{arizona2023} 
+Marker scenario;Generally, a widely accepted scenario which can be used a guide or to provide background information. E.g., SSP1-5, and the GEC models from the IEA. If applicable, these can be extended upon or combined to help build our models. ;Scenario description ;Basis scenario ;\cite{skea2021outlooks} 
+SSP ;Shared Social Pathways. They “describe plausible major global developments that together would lead in the future to different challenges for mitigation and adaptation to climate change. The SSPs are based on five narratives describing alternative socio-economic developments, including sustainable development, regional rivalry, inequality, fossil-fuelled development, and middle-of-the-road development. The long-term demographic and economic projections of the SSPs depict a wide uncertainty range consistent with the scenario literature.” ;Marker scenario examples ; ;\cite{ipcc2022land}
+Drivers ;Underlying causes of system change that are external from the system of analysis. They come from higher scales and are not affected by what happens within the system.  ;Scenario component ;Factors ;\cite{walker2013uncertainty}, in \cite{arizona2023} 
+Factors ;Causes of system change that are internal from the system of analysis. Can be (hopefully) quantified, or at least estimated ;Scenario component (internal) ; ;\cite{skea2021outlooks} 
+Factor variables ;Discrete elements which are subject to change and have effects on one or more factors ;Factor component ; ;\cite{skea2021outlooks} 
+Factor parameters ;Discrete elements which are NOT subject to change (possibly based on assumptions and simplifications) and have effects on one or more factors ;Factor component ; ;\cite{skea2021outlooks} 
+Trends ;An inclination in a particular direction ;Attribute of drivers or factors ;System development ;\cite{skea2021outlooks} 
+Likelihood ;The likelihood of an occurrence, an outcome, or a result, where this can be estimated probabilistically;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+Virtually certain ;>99/% probability of occurrence ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+Very likely ;>90/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+Likely ;>66/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+More likely than not ;>50/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+About as likely as not ;33–66/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+Unlikely ;<33/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+Very unlikely ;<10/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 
+Exceptionally unlikely ;<1/% ;Attribute of drivers or factors ;Probability;\cite{arizona2023} 

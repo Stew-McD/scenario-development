@@ -1,0 +1,34 @@
+\breaksection{Terminology}\label{appendix:terminology}
+
+The following is a suggested terminology for use in our discussions and reports related to scenarios.
+
+This glossary is modelled on that used by~\cite{skea2021outlooks}. Some additional definitions were sourced from~\cite{arizona2023}.
+
+\begin{landscape}
+  \centering
+  \small
+  \begin{longtable}{|L{3.5cm}|L{10cm}|L{3.5cm}|L{2.5cm}|L{2cm}|}
+    \caption{Terminology}\label{tab:terminology}\\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    {\color{white}\textbf{TERM}}& {\color{white}\textbf{DEFINITION}}& 
+    {\color{white}\textbf{LEVEL/CONTEXT}}& {\color{white}\textbf{ALSO CALLED}}& {\color{white}\textbf{SOURCE}} \\
+    \hline
+    \endfirsthead%
+    \hline
+    \multicolumn{5}{r}{\textcolor{headerblue}{\textit{{Continued on next page}}}} \\
+    \endfoot%
+    \rowcolor{white}
+    \multicolumn{5}{c}{{\textcolor{headerblue}{\textit{\tablename\ \thetable{} --- Continued from previous page}}}} \\
+    \hline
+    \rowcolor{headerblue} % Applying the header color
+    {\color{white}\textbf{TERM}} & {\color{white}\textbf{DEFINITION}} & {\color{white}\textbf{LEVEL/CONTEXT}} & {\color{white}\textbf{ALSO CALLED}} & {\color{white}\textbf{SOURCE}}\\  \hline
+    \endhead%
+    \bottomrule
+    \endlastfoot%
+    \csvreader[late after last line=\ , separator=semicolon]{csvs/terminology.csv}{}{
+      \csvcoli& \csvcolii& \csvcoliii& \csvcoliv& \csvcolv\\
+      \hline
+    }
+  \end{longtable}
+\end{landscape}
